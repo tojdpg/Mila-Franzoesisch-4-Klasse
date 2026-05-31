@@ -1,0 +1,17 @@
+{
+  "name": "Mila - Mission de français DST3",
+  "short_name": "Français DST3",
+  "description": "Interaktive Französisch-Übungen zur Vorbereitung auf DST3.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7fbfd",
+  "theme_color": "#176b87",
+  "icons": [
+    {
+      "src": "assets/dragon-academy.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+---
+title: "Français - Entraînement DST 1"
+subtitle: "Mila - 4e année - Deutsch-Track"
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1.8cm
+lang: fr
+---
+
+Nom : ________________________________  Date : ________________________________
+
+## Partie 1 : Conjugaison
+
+### 1. Conjugue le verbe entre parenthèses.
+
+a) Le petit dragon (**aller**) __________ à l'école des sorciers.
+
+b) Je (**faire**) __________ un dessin magique.
+
+c) Nous (**venir**) __________ à l'école demain.
+
+d) Les enfants (**prendre**) __________ le bus.
+
+e) Tu (**dire**) __________ bonjour à la maîtresse.
+
+f) Mila et Thea (**être**) __________ dans la cour.
+
+g) Le chat noir (**avoir**) __________ une clochette dorée.
+
+h) Vous (**voir**) __________ un trésor dans la grotte.
+
+## Partie 2 : Verbes conjugués
+
+### 2. Souligne le verbe conjugué.
+
+a) Le petit dragon mange une pomme verte.
+
+b) Nous allons à la bibliothèque.
+
+c) Mila écrit une histoire magique.
+
+d) Les pirates cherchent un trésor.
+
+e) Je fais mes devoirs après l'école.
+
+f) Le chien dort sous la table.
+
+g) Vous prenez le bus demain.
+
+h) La maîtresse lit une phrase au tableau.
+
+## Partie 3 : Infinitif
+
+### 3. Écris l'infinitif du verbe souligné.
+
+a) Mila **mange** une pomme.  
+Infinitif : ________________________________
+
+b) Les enfants **vont** au parc.  
+Infinitif : ________________________________
+
+c) Nous **faisons** un dessin.  
+Infinitif : ________________________________
+
+d) Tu **prends** ton cartable.  
+Infinitif : ________________________________
+
+e) Elle **dit** une phrase.  
+Infinitif : ________________________________
+
+f) Les pirates **sont** sur le bateau.  
+Infinitif : ________________________________
+
+g) Le dragon **a** deux ailes.  
+Infinitif : ________________________________
+
+## Partie 4 : Sujet - Verbe - Complément
+
+### 4. Dans chaque phrase, indique le sujet, le verbe et le complément.
+
+a) Le pirate cherche un trésor.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+b) Mila lit un livre.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+c) Les dragons volent dans le ciel.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+d) La petite sorcière prépare une potion.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+## Partie 5 : Homophones
+
+### 5. Complète avec **on** ou **ont**.
+
+a) ______ joue dans la cour.
+
+b) Ils ______ un nouveau ballon.
+
+c) ______ va au musée demain.
+
+d) Les enfants ______ peur du dragon.
+
+### 6. Complète avec **son** ou **sont**.
+
+a) Les enfants ______ dans la classe.
+
+b) Paul cherche ______ cahier.
+
+c) Les dragons ______ très grands.
+
+d) Mila range ______ cartable.
+
+### 7. Complète avec **et** ou **est**.
+
+a) Mila ______ contente.
+
+b) Le chat ______ le chien jouent ensemble.
+
+c) Le trésor ______ dans la grotte.
+
+d) Le pirate porte un chapeau ______ une veste rouge.
+
+### 8. Complète avec **a** ou **à**.
+
+a) Elle ______ un livre rouge.
+
+b) Nous allons ______ l'école.
+
+c) Le pirate va ______ la plage.
+
+d) Le dragon ______ une grande queue.
+
+## Partie 6 : Les temps
+
+### 9. Indique si la phrase est au passé, au présent ou au futur.
+
+a) Hier, nous avons joué au football.  
+Temps : ________________________________
+
+b) Aujourd'hui, je fais mes devoirs.  
+Temps : ________________________________
+
+c) Demain, nous visiterons un musée.  
+Temps : ________________________________
+
+d) Maintenant, les enfants travaillent.  
+Temps : ________________________________
+
+e) Bientôt, nous partirons en vacances.  
+Temps : ________________________________
+
+f) La semaine dernière, Mila a lu un livre.  
+Temps : ________________________________
+
+## Partie 7 : Accords dans le groupe nominal
+
+### 10. Écris au pluriel.
+
+a) le petit chat noir  
+→ ________________________________
+
+b) la jolie fleur rouge  
+→ ________________________________
+
+c) un grand dragon vert  
+→ ________________________________
+
+d) la vieille carte magique  
+→ ________________________________
+
+### 11. Accorde l'adjectif.
+
+a) une robe (bleu)  
+→ ________________________________
+
+b) des fleurs (joli)  
+→ ________________________________
+
+c) un chien (noir)  
+→ ________________________________
+
+d) des dragons (vert)  
+→ ________________________________
+
+## Partie 8 : Lecture et compréhension
+
+Lis le texte.
+
+> Samedi, Mila est allée au zoo avec sa famille.  
+> Elle a vu des girafes, des lions et des singes.  
+> Son animal préféré est la girafe parce qu'elle est très grande.  
+> Après le zoo, Mila a mangé une glace au chocolat.  
+> Elle a beaucoup aimé cette sortie.
+
+### 12. Réponds avec une phrase complète.
+
+a) Où Mila est-elle allée ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+b) Quels animaux Mila a-t-elle vus ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+c) Quel est son animal préféré ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+d) Pourquoi aime-t-elle la girafe ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+e) Qu'est-ce que Mila a mangé après le zoo ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+## Partie 9 : Production écrite
+
+### 13. Écris 5 à 8 phrases au futur.
+
+Sujet : **Mes prochaines vacances**
+
+Tu peux utiliser :
+
+- demain
+- bientôt
+- je vais
+- je ferai
+- je jouerai
+- je visiterai
+- nous irons
+- je prendrai
+- parce que
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________

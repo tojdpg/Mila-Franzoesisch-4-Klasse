@@ -1,0 +1,153 @@
+---
+title: "Lernzettel DST3 - Français"
+subtitle: "Mila - 4e année - Deutsch-Track"
+lang: fr
+format:
+  pdf:
+    documentclass: article
+    papersize: a4
+    fontsize: 8.5pt
+    geometry:
+      - margin=0.75cm
+    include-in-header:
+      text: |
+        \usepackage{multicol}
+        \usepackage{array}
+        \usepackage{tabularx}
+        \usepackage{enumitem}
+        \usepackage[compact]{titlesec}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{1.5pt}
+        \setlength{\columnsep}{0.45cm}
+        \renewcommand{\arraystretch}{0.86}
+        \setlist[itemize]{nosep,leftmargin=1em}
+        \titlespacing*{\section}{0pt}{0.45ex}{0.3ex}
+        \titlespacing*{\subsection}{0pt}{0.35ex}{0.2ex}
+        \newcommand{\verbcard}[2]{\textbf{#1}\\[-0.35ex]\begin{tabular}{@{}ll@{}}#2\end{tabular}\par\smallskip}
+        \pagenumbering{gobble}
+---
+
+\scriptsize
+
+## 1. Verbes au présent (Verben im Präsens)
+
+\begin{multicols}{4}
+\verbcard{être (sein)}{je & suis\\tu & es\\il/elle & est\\nous & sommes\\vous & êtes\\ils/elles & sont\\}
+\verbcard{avoir (haben)}{j' & ai\\tu & as\\il/elle & a\\nous & avons\\vous & avez\\ils/elles & ont\\}
+\verbcard{aller (gehen)}{je & vais\\tu & vas\\il/elle & va\\nous & allons\\vous & allez\\ils/elles & vont\\}
+\verbcard{faire (machen)}{je & fais\\tu & fais\\il/elle & fait\\nous & faisons\\vous & faites\\ils/elles & font\\}
+\verbcard{venir (kommen)}{je & viens\\tu & viens\\il/elle & vient\\nous & venons\\vous & venez\\ils/elles & viennent\\}
+\verbcard{prendre (nehmen)}{je & prends\\tu & prends\\il/elle & prend\\nous & prenons\\vous & prenez\\ils/elles & prennent\\}
+\verbcard{dire (sagen)}{je & dis\\tu & dis\\il/elle & dit\\nous & disons\\vous & dites\\ils/elles & disent\\}
+\verbcard{pouvoir (können)}{je & peux\\tu & peux\\il/elle & peut\\nous & pouvons\\vous & pouvez\\ils/elles & peuvent\\}
+\verbcard{vouloir (wollen)}{je & veux\\tu & veux\\il/elle & veut\\nous & voulons\\vous & voulez\\ils/elles & veulent\\}
+\verbcard{finir (beenden / fertig machen)}{je & finis\\tu & finis\\il/elle & finit\\nous & finissons\\vous & finissez\\ils/elles & finissent\\}
+\end{multicols}
+
+## 2. Mots indicateurs du temps (Zeitwörter erkennen)
+
+| Passé (Vergangenheit) | Présent (Gegenwart) | Futur (Zukunft) |
+|---|---|---|
+| hier | aujourd'hui | demain |
+| la semaine dernière | maintenant | bientôt |
+| autrefois | en ce moment | plus tard |
+
+**Exemples :** Hier, nous avons joué. → passé · Aujourd'hui, je fais mes devoirs. → présent · Demain, nous irons au parc. → futur
+
+## 3. Infinitif (Grundform des Verbs)
+
+L'infinitif est la forme de base du verbe.
+
+| Verbe conjugué | Infinitif | Verbe conjugué | Infinitif |
+|---|---|---|---|
+| je vais | aller | tu fais | faire |
+| il prend | prendre | nous venons | venir |
+| elles sont | être | ils ont | avoir |
+
+## 4. Sujet - Verbe - Complément (Subjekt - Verb - Ergänzung)
+
+**Sujet** = Wer oder was ? · **Verbe** = Was tut jemand ? · **Complément** = Wen ? Was ? Wo ? Wann ?
+
+| Phrase | Sujet | Verbe | Complément |
+|---|---|---|---|
+| Le petit dragon mange une pomme. | Le petit dragon | mange | une pomme |
+| Mila lit un livre. | Mila | lit | un livre |
+
+## 5. Homophones (gleich klingende Wörter)
+
+| Homophone | Sens | Exemple |
+|---|---|---|
+| **on** | man / wir | On joue dans la cour. |
+| **ont** | haben | Ils ont un ballon. |
+| **son** | sein / ihr | C'est son livre. |
+| **sont** | sind | Ils sont contents. |
+| **et** | und | Paul et Marie jouent. |
+| **est** | ist | Paul est content. |
+| **a** | hat | Il a un chien. |
+| **à** | in / nach / zu / an | Il va à l'école. |
+
+\newpage
+
+## 6. Accords dans le groupe nominal (Übereinstimmung in der Nomengruppe)
+
+Adjectif + nom : masculin / féminin / singulier / pluriel beachten.
+
+| Masculin | Féminin | Pluriel |
+|---|---|---|
+| un petit chat | une petite chatte | des petits chats |
+| un grand dragon | une grande dragonne | des grands dragons |
+| un joli livre | une jolie fleur | des jolis livres |
+
+**Merke :** féminin oft **-e** · pluriel oft **-s** · féminin pluriel oft **-es**.
+
+| Masculin singulier | Féminin singulier | Masculin pluriel | Féminin pluriel |
+|---|---|---|---|
+| petit | petite | petits | petites |
+| grand | grande | grands | grandes |
+| joli | jolie | jolis | jolies |
+| bleu | bleue | bleus | bleues |
+| vert | verte | verts | vertes |
+
+## 7. Sons à connaître (Laute erkennen)
+
+| Son | Exemples | Son | Exemples |
+|---|---|---|---|
+| oi | trois, noir, poisson | an | enfant, blanc, grand |
+| ai | lait, chaise, vrai | in | lapin, matin, jardin |
+| ou | loup, rouge, souris | on | ballon, bonbon, camion |
+
+## 8. Répondre avec une phrase complète (in ganzen Sätzen antworten)
+
+Règle : ne pas écrire seulement un mot. Toujours répondre avec une phrase.
+
+| Question | Pas assez | Bien |
+|---|---|---|
+| Pourquoi Mila aime la girafe ? | Parce qu'elle est grande. | Mila aime la girafe parce qu'elle est grande. |
+
+**Débuts utiles :** Je pense que ... · Le texte parle de ... · Le personnage principal est ... · J'aime ce livre parce que ... · Je recommande ce livre car ...
+
+## 9. Écrire au futur (im Futur schreiben)
+
+**Mots utiles :** demain · bientôt · plus tard · pendant les vacances · la semaine prochaine
+
+| Français | Deutsch | Français | Deutsch |
+|---|---|---|---|
+| je serai | ich werde sein | j'aurai | ich werde haben |
+| j'irai | ich werde gehen | je ferai | ich werde machen |
+| je jouerai | ich werde spielen | je visiterai | ich werde besuchen |
+| nous irons | wir werden gehen | nous ferons | wir werden machen |
+
+**Exemple :** Demain, j'irai au parc avec mes amis. Je jouerai au ballon. Ensuite, je ferai mes devoirs. Le soir, je lirai un livre.
+
+## 10. Présenter un livre (ein Buch vorstellen)
+
+| Français | Deutsch |
+|---|---|
+| Le titre est ... | Der Titel ist ... |
+| L'auteur est ... | Der Autor / die Autorin ist ... |
+| Le personnage principal est ... | Die Hauptfigur ist ... |
+| L'histoire parle de ... | Die Geschichte handelt von ... |
+| J'aime ce livre parce que ... | Ich mag dieses Buch, weil ... |
+| Je recommande ce livre car ... | Ich empfehle dieses Buch, denn ... |
+
+**Mini-plan :** titre → auteur → personnage principal → histoire → avis avec **parce que** / **car**.
