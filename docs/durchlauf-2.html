@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mila - Mission de français DST3 blanc 2</title>
+    <meta name="description" content="Zweiter interaktiver Französisch-Durchlauf für Mila zur Vorbereitung auf DST3.">
+    <meta name="theme-color" content="#176b87">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Français DST3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="assets/dragon-academy.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260601-round2">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller aux exercices</a>
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/dragon-academy.svg" width="56" height="56" alt="Petit dragon professeur avec un cahier de français">
+        <div>
+          <p class="eyebrow">Judith Kerr Grundschule · 4B PS-FR</p>
+          <p class="brand-title">Mission de français DST3 blanc 2</p>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <div class="score-pill" aria-live="polite">
+          <span>Score</span>
+          <strong><span id="score">0</span>/<span id="total">0</span></strong>
+        </div>
+        <div class="save-status" id="saveStatus" aria-live="polite">Automatisch gespeichert</div>
+        <a class="nav-link" href="uebersicht.html">Übersicht</a>
+        <a class="nav-link" href="index.html">Durchlauf 1</a>
+        <button class="icon-button" id="resetBtn" type="button" aria-label="Recommencer toutes les missions">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 12a8 8 0 1 0 2.34-5.66"/>
+            <path d="M4 4v6h6"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="intro-band" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Deuxième tour</p>
+          <h1 id="intro-title">Mila et le laboratoire du panda roux</h1>
+          <p>
+            Le professeur Dragon a préparé un nouveau devoir blanc. Cette fois,
+            il faut reconnaître les temps, changer les phrases, accorder les
+            groupes nominaux et répondre avec des phrases complètes.
+          </p>
+        </div>
+
+        <div class="mission-meter" aria-label="Progression">
+          <div>
+            <span>Missions réussies</span>
+            <strong id="progressLabel">0%</strong>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p id="rankLabel">Niveau actuel : apprentie des verbes</p>
+        </div>
+      </section>
+
+      <nav class="mission-nav" aria-label="Missions">
+        <button type="button" data-jump="#conjugaison">Conjugaison</button>
+        <button type="button" data-jump="#verbes-temps">Verbes + temps</button>
+        <button type="button" data-jump="#infinitif">Infinitif</button>
+        <button type="button" data-jump="#changer-temps">Changer le temps</button>
+        <button type="button" data-jump="#phrase">Phrase</button>
+        <button type="button" data-jump="#homophones">Homophones</button>
+        <button type="button" data-jump="#accords">Accords</button>
+        <button type="button" data-jump="#sons">Sons</button>
+        <button type="button" data-jump="#lecture">Lecture</button>
+        <button type="button" data-jump="#ecriture">Futur</button>
+      </nav>
+
+      <section class="mission-band" id="conjugaison" aria-labelledby="conjugaison-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 1</p>
+          <h2 id="conjugaison-title">Conjugaison au présent</h2>
+          <p>Conjugue le verbe entre parenthèses.</p>
+        </div>
+
+        <div class="exercise-grid">
+          <label class="exercise" data-task data-answer="peux">
+            <span>a) Je <strong>(pouvoir)</strong> ouvrir le livre magique.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse a">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="veux">
+            <span>b) Tu <strong>(vouloir)</strong> dessiner un dragon.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse b">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="finit">
+            <span>c) Le pirate <strong>(finir)</strong> sa carte.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse c">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="venons">
+            <span>d) Nous <strong>(venir)</strong> à l'école demain.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse d">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="faites">
+            <span>e) Vous <strong>(faire)</strong> une affiche.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse e">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="disent">
+            <span>f) Mila et Thea <strong>(dire)</strong> la réponse.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse f">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="prennent">
+            <span>g) Les enfants <strong>(prendre)</strong> le bus.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse g">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="vais">
+            <span>h) Je <strong>(aller)</strong> à la bibliothèque.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse h">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="est">
+            <span>i) La maîtresse <strong>(être)</strong> dans la classe.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse i">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="ont">
+            <span>j) Les dragons <strong>(avoir)</strong> des ailes.</span>
+            <input type="text" autocomplete="off" aria-label="Réponse j">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+        </div>
+
+        <button class="check-button" type="button" data-check="#conjugaison">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band alt" id="verbes-temps" aria-labelledby="verbes-temps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 2</p>
+          <h2 id="verbes-temps-title">Verbes conjugués et indicateurs de temps</h2>
+          <p>Écris le verbe conjugué et le mot indicateur du temps.</p>
+        </div>
+
+        <div class="sentence-lab">
+          <article class="sentence-card">
+            <p class="sentence">Hier, la classe a visité le musée.</p>
+            <label data-task data-answer="a visité|a visite">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="hier">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Maintenant, Mila écrit dans son cahier.</p>
+            <label data-task data-answer="écrit|ecrit">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="maintenant">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Demain, nous irons à la piscine.</p>
+            <label data-task data-answer="irons">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="demain">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">En ce moment, les pirates cherchent une île.</p>
+            <label data-task data-answer="cherchent">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="en ce moment">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">La semaine dernière, tu as pris le train.</p>
+            <label data-task data-answer="as pris">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="la semaine dernière|la semaine derniere">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Bientôt, le dragon dormira dans sa grotte.</p>
+            <label data-task data-answer="dormira">Verbe conjugué<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="bientôt|bientot">Indicateur de temps<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+        </div>
+
+        <button class="check-button" type="button" data-check="#verbes-temps">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band" id="infinitif" aria-labelledby="infinitif-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 3</p>
+          <h2 id="infinitif-title">Infinitif</h2>
+          <p>Écris l'infinitif du verbe en gras.</p>
+        </div>
+
+        <div class="exercise-grid">
+          <label class="exercise" data-task data-answer="pouvoir"><span>a) Les enfants <strong>peuvent</strong> sortir dans la cour.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="venir"><span>b) Tu <strong>viens</strong> à l'école avec ton cartable.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="faire"><span>c) Elle <strong>fait</strong> un dessin de dragon.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="vouloir"><span>d) Ils <strong>veulent</strong> lire une histoire.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="être|etre"><span>e) Nous <strong>sommes</strong> dans la classe.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="avoir"><span>f) J'<strong>ai</strong> un cahier rouge.</span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+        </div>
+
+        <button class="check-button" type="button" data-check="#infinitif">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band alt" id="changer-temps" aria-labelledby="changer-temps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 4</p>
+          <h2 id="changer-temps-title">Changer le temps</h2>
+          <p>Réécris la phrase au temps demandé.</p>
+        </div>
+
+        <div class="exercise-grid">
+          <label class="exercise" data-task data-answer="Mila fera un dessin|Mila va faire un dessin">
+            <span>a) Présent : Aujourd'hui, Mila fait un dessin.<br>Futur : Demain,</span>
+            <input type="text" autocomplete="off">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="les enfants jouent dans la cour">
+            <span>b) Passé : Hier, les enfants ont joué dans la cour.<br>Présent : Aujourd'hui,</span>
+            <input type="text" autocomplete="off">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="je prendrai le bus|je vais prendre le bus">
+            <span>c) Présent : Maintenant, je prends le bus.<br>Futur : Demain,</span>
+            <input type="text" autocomplete="off">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="exercise" data-task data-answer="nous lisons un livre">
+            <span>d) Futur : Bientôt, nous lirons un livre.<br>Présent : Maintenant,</span>
+            <input type="text" autocomplete="off">
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+        </div>
+
+        <button class="check-button" type="button" data-check="#changer-temps">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band" id="phrase" aria-labelledby="phrase-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 5</p>
+          <h2 id="phrase-title">Sujet, verbe, complément</h2>
+          <p>Complète les trois cases.</p>
+        </div>
+
+        <div class="sentence-lab">
+          <article class="sentence-card">
+            <p class="sentence">Le petit dragon ouvre la porte bleue.</p>
+            <label data-task data-answer="Le petit dragon">Sujet<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="ouvre">Verbe<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="la porte bleue">Complément<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Les pirates cachent le trésor sous le sable.</p>
+            <label data-task data-answer="Les pirates">Sujet<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="cachent">Verbe<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="le trésor sous le sable|le tresor sous le sable">Complément<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Mila explique sa réponse avec une phrase.</p>
+            <label data-task data-answer="Mila">Sujet<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="explique">Verbe<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="sa réponse avec une phrase|sa reponse avec une phrase">Complément<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+
+          <article class="sentence-card">
+            <p class="sentence">Nous lisons un texte informatif.</p>
+            <label data-task data-answer="Nous">Sujet<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="lisons">Verbe<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+            <label data-task data-answer="un texte informatif">Complément<input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          </article>
+        </div>
+
+        <button class="check-button" type="button" data-check="#phrase">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band alt" id="homophones" aria-labelledby="homophones-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 6</p>
+          <h2 id="homophones-title">Homophones</h2>
+          <p>Choisis le bon mot.</p>
+        </div>
+
+        <div class="exercise-grid compact">
+          <article class="exercise choice-task" data-task data-answer="on"><p>a) ______ prépare une potion.</p><div class="choice-row"><button type="button" data-value="on">on</button><button type="button" data-value="ont">ont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="ont"><p>b) Les enfants ______ des crayons.</p><div class="choice-row"><button type="button" data-value="on">on</button><button type="button" data-value="ont">ont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="on"><p>c) ______ va au théâtre demain.</p><div class="choice-row"><button type="button" data-value="on">on</button><button type="button" data-value="ont">ont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="sont"><p>d) Les cahiers ______ sur la table.</p><div class="choice-row"><button type="button" data-value="son">son</button><button type="button" data-value="sont">sont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="son"><p>e) Le pirate cherche ______ bateau.</p><div class="choice-row"><button type="button" data-value="son">son</button><button type="button" data-value="sont">sont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="son"><p>f) Mila range ______ livre.</p><div class="choice-row"><button type="button" data-value="son">son</button><button type="button" data-value="sont">sont</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="est"><p>g) Le dragon ______ dans la forêt.</p><div class="choice-row"><button type="button" data-value="et">et</button><button type="button" data-value="est">est</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="et"><p>h) La maîtresse ______ les élèves lisent.</p><div class="choice-row"><button type="button" data-value="et">et</button><button type="button" data-value="est">est</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="est"><p>i) Le coffre ______ fermé.</p><div class="choice-row"><button type="button" data-value="et">et</button><button type="button" data-value="est">est</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="a"><p>j) Elle ______ une règle bleue.</p><div class="choice-row"><button type="button" data-value="a">a</button><button type="button" data-value="à">à</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="à"><p>k) Nous allons ______ la bibliothèque.</p><div class="choice-row"><button type="button" data-value="a">a</button><button type="button" data-value="à">à</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="à"><p>l) Le pirate donne la carte ______ Mila.</p><div class="choice-row"><button type="button" data-value="a">a</button><button type="button" data-value="à">à</button></div><small class="feedback" aria-live="polite"></small></article>
+        </div>
+
+        <button class="check-button" type="button" data-check="#homophones">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band" id="accords" aria-labelledby="accords-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 7</p>
+          <h2 id="accords-title">Accords dans le groupe nominal</h2>
+          <p>Indique le genre et le nombre, puis accorde les groupes nominaux.</p>
+        </div>
+
+        <div class="exercise-grid compact">
+          <article class="exercise choice-task" data-task data-answer="féminin pluriel"><p>a) les petites souris grises</p><div class="choice-row triple"><button type="button" data-value="féminin pluriel">féminin pluriel</button><button type="button" data-value="masculin pluriel">masculin pluriel</button><button type="button" data-value="féminin singulier">féminin singulier</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="masculin singulier"><p>b) un vieux bateau noir</p><div class="choice-row triple"><button type="button" data-value="masculin singulier">masculin singulier</button><button type="button" data-value="féminin singulier">féminin singulier</button><button type="button" data-value="masculin pluriel">masculin pluriel</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="féminin pluriel"><p>c) les grandes étoiles jaunes</p><div class="choice-row triple"><button type="button" data-value="féminin pluriel">féminin pluriel</button><button type="button" data-value="masculin pluriel">masculin pluriel</button><button type="button" data-value="féminin singulier">féminin singulier</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="féminin singulier"><p>d) cette histoire magique</p><div class="choice-row triple"><button type="button" data-value="féminin singulier">féminin singulier</button><button type="button" data-value="masculin singulier">masculin singulier</button><button type="button" data-value="féminin pluriel">féminin pluriel</button></div><small class="feedback" aria-live="polite"></small></article>
+
+          <label class="exercise" data-task data-answer="les vieux pirates"><span>e) Écris au pluriel : <strong>le vieux pirate</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="les petites écoles françaises|les petites ecoles francaises"><span>f) Écris au pluriel : <strong>la petite école française</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="des ballons ronds"><span>g) Écris au pluriel : <strong>un ballon rond</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="les grandes fleurs bleues"><span>h) Écris au pluriel : <strong>la grande fleur bleue</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+
+          <label class="exercise" data-task data-answer="des cartes magiques"><span>i) Accorde : <strong>des cartes (magique)</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="une souris grise"><span>j) Accorde : <strong>une souris (gris)</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="des dragons gentils"><span>k) Accorde : <strong>des dragons (gentil)</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+          <label class="exercise" data-task data-answer="la mer bleue"><span>l) Accorde : <strong>la mer (bleu)</strong></span><input type="text" autocomplete="off"><small class="feedback" aria-live="polite"></small></label>
+        </div>
+
+        <button class="check-button" type="button" data-check="#accords">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band alt" id="sons" aria-labelledby="sons-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 8</p>
+          <h2 id="sons-title">Sons à connaître</h2>
+          <p>Choisis le son que tu entends.</p>
+        </div>
+
+        <div class="exercise-grid compact">
+          <article class="exercise choice-task" data-task data-answer="oi"><p>a) poisson</p><div class="choice-row triple"><button type="button" data-value="oi">oi</button><button type="button" data-value="ai">ai</button><button type="button" data-value="ou">ou</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="ai"><p>b) chaise</p><div class="choice-row triple"><button type="button" data-value="oi">oi</button><button type="button" data-value="ai">ai</button><button type="button" data-value="in">in</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="ou"><p>c) souris</p><div class="choice-row triple"><button type="button" data-value="ou">ou</button><button type="button" data-value="on">on</button><button type="button" data-value="an">an</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="an"><p>d) enfant</p><div class="choice-row triple"><button type="button" data-value="an">an</button><button type="button" data-value="in">in</button><button type="button" data-value="on">on</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="in"><p>e) lapin</p><div class="choice-row triple"><button type="button" data-value="ai">ai</button><button type="button" data-value="in">in</button><button type="button" data-value="on">on</button></div><small class="feedback" aria-live="polite"></small></article>
+          <article class="exercise choice-task" data-task data-answer="on"><p>f) bonbon</p><div class="choice-row triple"><button type="button" data-value="ou">ou</button><button type="button" data-value="an">an</button><button type="button" data-value="on">on</button></div><small class="feedback" aria-live="polite"></small></article>
+        </div>
+
+        <button class="check-button" type="button" data-check="#sons">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band" id="lecture" aria-labelledby="lecture-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 9</p>
+          <h2 id="lecture-title">Lecture et compréhension</h2>
+          <p>Lis le texte puis réponds avec des phrases complètes.</p>
+        </div>
+
+        <blockquote class="reading">
+          Le panda roux vit en Asie, dans les forêts de montagne. Il a une
+          longue queue rayée et un pelage roux. Il mange surtout des bambous,
+          mais il peut aussi manger des fruits et de petits insectes. Le panda
+          roux est un animal discret : il dort souvent dans les arbres.
+          Aujourd'hui, il est protégé parce que son habitat disparaît.
+        </blockquote>
+
+        <div class="writing-grid">
+          <label class="long-answer" data-task data-keywords="asie,forêts|forets,montagne">
+            a) Où vit le panda roux ?
+            <textarea rows="3"></textarea>
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="long-answer" data-task data-keywords="queue,longue,rayée|rayee">
+            b) Comment est sa queue ?
+            <textarea rows="3"></textarea>
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="long-answer" data-task data-keywords="bambous,fruits|insectes">
+            c) Que mange le panda roux ?
+            <textarea rows="3"></textarea>
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="long-answer" data-task data-keywords="parce que|car,habitat,disparaît|disparait">
+            d) Pourquoi le panda roux est-il protégé ?
+            <textarea rows="3"></textarea>
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+
+          <label class="long-answer" data-task data-keywords="informatif,parce que|car,informations">
+            e) Ce texte est-il une histoire ou un texte informatif ? Justifie.
+            <textarea rows="3"></textarea>
+            <small class="feedback" aria-live="polite"></small>
+          </label>
+        </div>
+
+        <button class="check-button" type="button" data-check="#lecture">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier
+        </button>
+      </section>
+
+      <section class="mission-band alt" id="ecriture" aria-labelledby="ecriture-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mission 10</p>
+          <h2 id="ecriture-title">Production écrite au futur</h2>
+          <p>Écris 5 à 8 phrases. Sujet : <strong>Demain, je présenterai un livre à la classe</strong></p>
+        </div>
+
+        <div class="word-bank" aria-label="Mots utiles">
+          <span>demain</span>
+          <span>je présenterai</span>
+          <span>j'expliquerai</span>
+          <span>je parlerai</span>
+          <span>je lirai</span>
+          <span>je dirai</span>
+          <span>je recommanderai</span>
+          <span>parce que</span>
+          <span>car</span>
+        </div>
+
+        <label class="future-writing" data-writing-task>
+          Mon texte
+          <textarea id="futureText" rows="9" aria-describedby="futureHelp"></textarea>
+          <small id="futureHelp" class="feedback" aria-live="polite">Le dragon compte les phrases et cherche le futur.</small>
+        </label>
+
+        <button class="check-button" id="checkWritingBtn" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          Vérifier mon texte
+        </button>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app-durchlauf-2.js?v=20260601-round2"></script>
+  </body>
+</html>

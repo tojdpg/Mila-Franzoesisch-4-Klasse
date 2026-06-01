@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Dragon professeur de français</title>
+  <desc id="desc">Un dragon vert souriant tient un cahier avec les lettres DST.</desc>
+  <rect width="240" height="240" rx="26" fill="#fffdf6"/>
+  <path d="M27 184c22-33 47-51 76-54 36-4 70 16 103 51" fill="#dceff4"/>
+  <path d="M61 126c-23-18-27-45-14-66 13 15 25 21 36 18" fill="#176b87"/>
+  <path d="M178 125c24-18 29-45 15-66-13 15-25 21-36 18" fill="#176b87"/>
+  <path d="M70 96c2-39 27-62 64-62 36 0 59 24 61 62l5 71c1 18-13 34-31 34H96c-18 0-33-16-31-34z" fill="#1ca87d"/>
+  <path d="M88 80 74 52l28 16zm86 0 14-28-28 16z" fill="#1ca87d"/>
+  <path d="M88 80 74 52l28 16zm86 0 14-28-28 16z" fill="none" stroke="#17212b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M70 96c2-39 27-62 64-62 36 0 59 24 61 62l5 71c1 18-13 34-31 34H96c-18 0-33-16-31-34z" fill="none" stroke="#17212b" stroke-width="7"/>
+  <circle cx="108" cy="105" r="8" fill="#17212b"/>
+  <circle cx="158" cy="105" r="8" fill="#17212b"/>
+  <path d="M126 124c4 5 10 5 14 0" fill="none" stroke="#17212b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M111 145c15 13 33 13 47 0" fill="none" stroke="#17212b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M99 172h85c8 0 15 7 15 15v28H84v-28c0-8 7-15 15-15z" fill="#f2bd42" stroke="#17212b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M104 193h73" stroke="#17212b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M104 211h53" stroke="#17212b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M88 42c17-17 68-17 86 0" fill="none" stroke="#e85d75" stroke-width="12" stroke-linecap="round"/>
+  <path d="M118 27h33" stroke="#17212b" stroke-width="7" stroke-linecap="round"/>
+  <text x="116" y="160" fill="#17212b" font-family="Avenir Next, Arial, sans-serif" font-size="24" font-weight="800">DST</text>
+</svg>
