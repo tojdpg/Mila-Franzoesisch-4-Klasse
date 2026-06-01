@@ -1,0 +1,314 @@
+---
+title: "Français - DST3 blanc 2"
+subtitle: "Mila - 4e année - Deutsch-Track"
+format:
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry:
+      - margin=1.7cm
+lang: fr
+---
+
+Nom : ________________________________  Date : ________________________________
+
+## Partie 1 : Conjugaison au présent
+
+### 1. Conjugue le verbe entre parenthèses.
+
+a) Je (**pouvoir**) __________ ouvrir le livre magique.
+
+b) Tu (**vouloir**) __________ dessiner un dragon.
+
+c) Le pirate (**finir**) __________ sa carte.
+
+d) Nous (**venir**) __________ à l'école demain.
+
+e) Vous (**faire**) __________ une affiche.
+
+f) Mila et Thea (**dire**) __________ la réponse.
+
+g) Les enfants (**prendre**) __________ le bus.
+
+h) Je (**aller**) __________ à la bibliothèque.
+
+i) La maîtresse (**être**) __________ dans la classe.
+
+j) Les dragons (**avoir**) __________ des ailes.
+
+## Partie 2 : Verbes conjugués et indicateurs de temps
+
+### 2. Souligne le verbe conjugué et entoure le mot indicateur du temps.
+
+a) Hier, la classe a visité le musée.
+
+b) Maintenant, Mila écrit dans son cahier.
+
+c) Demain, nous irons à la piscine.
+
+d) En ce moment, les pirates cherchent une île.
+
+e) La semaine dernière, tu as pris le train.
+
+f) Bientôt, le dragon dormira dans sa grotte.
+
+## Partie 3 : Infinitif
+
+### 3. Écris l'infinitif du verbe souligné.
+
+a) Les enfants **peuvent** sortir dans la cour.  
+Infinitif : ________________________________
+
+b) Tu **viens** à l'école avec ton cartable.  
+Infinitif : ________________________________
+
+c) Elle **fait** un dessin de dragon.  
+Infinitif : ________________________________
+
+d) Ils **veulent** lire une histoire.  
+Infinitif : ________________________________
+
+e) Nous **sommes** dans la classe.  
+Infinitif : ________________________________
+
+f) J'**ai** un cahier rouge.  
+Infinitif : ________________________________
+
+## Partie 4 : Changer le temps
+
+### 4. Réécris la phrase au temps demandé.
+
+a) Présent : Aujourd'hui, Mila fait un dessin.  
+Futur : Demain, ________________________________________________
+
+____________________________________________________________
+
+b) Passé : Hier, les enfants ont joué dans la cour.  
+Présent : Aujourd'hui, __________________________________________
+
+____________________________________________________________
+
+c) Présent : Maintenant, je prends le bus.  
+Futur : Demain, ________________________________________________
+
+____________________________________________________________
+
+d) Futur : Bientôt, nous lirons un livre.  
+Présent : Maintenant, __________________________________________
+
+____________________________________________________________
+
+## Partie 5 : Sujet - Verbe - Complément
+
+### 5. Dans chaque phrase, indique le sujet, le verbe et le complément.
+
+a) Le petit dragon ouvre la porte bleue.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+b) Les pirates cachent le trésor sous le sable.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+c) Mila explique sa réponse avec une phrase.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+
+d) Nous lisons un texte informatif.
+
+Sujet : ________________________________
+
+Verbe : ________________________________
+
+Complément : ________________________________
+
+## Partie 6 : Homophones
+
+### 6. Complète avec **on** ou **ont**.
+
+a) ______ prépare une potion.
+
+b) Les enfants ______ des crayons.
+
+c) ______ va au théâtre demain.
+
+### 7. Complète avec **son** ou **sont**.
+
+a) Les cahiers ______ sur la table.
+
+b) Le pirate cherche ______ bateau.
+
+c) Mila range ______ livre.
+
+### 8. Complète avec **et** ou **est**.
+
+a) Le dragon ______ dans la forêt.
+
+b) La maîtresse ______ les élèves lisent.
+
+c) Le coffre ______ fermé.
+
+### 9. Complète avec **a** ou **à**.
+
+a) Elle ______ une règle bleue.
+
+b) Nous allons ______ la bibliothèque.
+
+c) Le pirate donne la carte ______ Mila.
+
+## Partie 7 : Accords dans le groupe nominal
+
+### 10. Indique le genre et le nombre.
+
+Exemple : **un chat noir** -> masculin singulier
+
+a) les petites souris grises  
+Genre et nombre : ________________________________
+
+b) un vieux bateau noir  
+Genre et nombre : ________________________________
+
+c) les grandes étoiles jaunes  
+Genre et nombre : ________________________________
+
+d) cette histoire magique  
+Genre et nombre : ________________________________
+
+### 11. Écris au pluriel.
+
+a) le vieux pirate  
+→ ________________________________
+
+b) la petite école française  
+→ ________________________________
+
+c) un ballon rond  
+→ ________________________________
+
+d) la grande fleur bleue  
+→ ________________________________
+
+### 12. Accorde l'adjectif.
+
+a) des cartes (magique)  
+→ ________________________________
+
+b) une souris (gris)  
+→ ________________________________
+
+c) des dragons (gentil)  
+→ ________________________________
+
+d) la mer (bleu)  
+→ ________________________________
+
+## Partie 8 : Sons à connaître
+
+### 13. Écris le son que tu entends : **oi**, **ai**, **ou**, **an**, **in** ou **on**.
+
+a) poisson : __________
+
+b) chaise : __________
+
+c) souris : __________
+
+d) enfant : __________
+
+e) lapin : __________
+
+f) bonbon : __________
+
+## Partie 9 : Lecture et compréhension
+
+Lis le texte.
+
+> Le panda roux vit en Asie, dans les forêts de montagne.  
+> Il a une longue queue rayée et un pelage roux.  
+> Il mange surtout des bambous, mais il peut aussi manger des fruits et de petits insectes.  
+> Le panda roux est un animal discret : il dort souvent dans les arbres.  
+> Aujourd'hui, il est protégé parce que son habitat disparaît.
+
+### 14. Réponds avec une phrase complète.
+
+a) Où vit le panda roux ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+b) Comment est sa queue ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+c) Que mange le panda roux ?  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+d) Pourquoi le panda roux est-il protégé ? Utilise **parce que** ou **car**.  
+
+____________________________________________________________
+
+____________________________________________________________
+
+
+e) Ce texte est-il une histoire ou un texte informatif ? Justifie ta réponse avec **car** ou **parce que**.  
+
+____________________________________________________________
+
+____________________________________________________________
+
+## Partie 10 : Production écrite
+
+### 15. Écris 5 à 8 phrases au futur.
+
+Sujet : **Demain, je présenterai un livre à la classe**
+
+Tu peux utiliser :
+
+- demain
+- je présenterai
+- j'expliquerai
+- je parlerai
+- je lirai
+- je dirai
+- je recommanderai
+- parce que
+- car
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
