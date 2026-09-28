@@ -235,7 +235,7 @@ function renderHistory(history) {
           <div>
             <p class="eyebrow">${formatDate(entry.updatedAt)}</p>
             <h2>${htmlEscape(entry.title)}</h2>
-            <p>Score: ${entry.score}/${entry.total} · ${entry.percent}% · Missionen: ${entry.completedMissions}/10 komplett</p>
+            <p>Score: ${entry.score}/${entry.total} · ${entry.percent}% · Missionen: ${entry.completedMissions}/${(entry.missions || []).length || 10} komplett</p>
             ${entry.note ? `<p class="history-note">${htmlEscape(entry.note)}</p>` : ""}
           </div>
           <span class="status-badge ${badgeClass}">${badgeText}</span>
