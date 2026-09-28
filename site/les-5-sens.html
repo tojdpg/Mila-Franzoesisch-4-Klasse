@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/dragon-academy.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css?v=20260928-sens">
     <link rel="stylesheet" href="senses.css?v=20260928-eye4">
+    <link rel="stylesheet" href="dictionary.css?v=20260928-1">
   </head>
   <body class="senses-page">
     <a class="skip-link" href="#main">Aller au quiz</a>
@@ -50,6 +51,29 @@
     </main>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <aside class="dictionary" aria-label="Wörterdrache">
+      <section class="dictionary-panel" id="dictionaryPanel" aria-labelledby="dictionaryTitle" hidden>
+        <div class="dictionary-heading">
+          <img src="assets/dragon-academy.svg" width="42" height="42" alt="">
+          <div>
+            <p class="dictionary-eyebrow">Français → Deutsch</p>
+            <h2 id="dictionaryTitle">Wörterdrache</h2>
+          </div>
+          <button class="dictionary-close" id="dictionaryClose" type="button" aria-label="Wörterdrache schließen" title="Schließen">×</button>
+        </div>
+        <form id="dictionaryForm">
+          <label for="dictionaryInput">Wort oder Satz aus diesem Quiz</label>
+          <textarea id="dictionaryInput" rows="2" maxlength="300" placeholder="z. B. la rétine"></textarea>
+          <button class="dictionary-submit" id="dictionarySubmit" type="submit">Übersetzen</button>
+        </form>
+        <div class="dictionary-answer" id="dictionaryAnswer" role="status" aria-live="polite" hidden></div>
+      </section>
+      <button class="dictionary-launcher" id="dictionaryLauncher" type="button" aria-controls="dictionaryPanel" aria-expanded="false" title="Wörterdrache öffnen">
+        <img src="assets/dragon-academy.svg" width="40" height="40" alt="">
+        <span>Wörterdrache</span>
+      </button>
+    </aside>
     <script src="app-5-sens.js?v=20260928-eye4"></script>
+    <script src="dictionary.js?v=20260928-1"></script>
   </body>
 </html>
