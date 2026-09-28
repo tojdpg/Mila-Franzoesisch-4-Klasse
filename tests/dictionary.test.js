@@ -7,7 +7,7 @@ const vm = require("node:vm");
 const docs = path.join(__dirname, "..", "docs");
 const quizSource = fs.readFileSync(path.join(docs, "app-5-sens.js"), "utf8").split("const STORAGE_KEY")[0];
 const quizContext = {};
-vm.runInNewContext(`${quizSource}\nglobalThis.questions = QUIZ.flatMap(m => [m.instruction, ...m.items.map(i => i.prompt)]);`, quizContext);
+vm.runInNewContext(`${quizSource}\nglobalThis.questions = QUIZ.flatMap(m => [m.instruction, ...m.items.map(i => i.prompt)]); globalThis.options = QUIZ.flatMap(m => m.items.flatMap(i => i.options || []));`, quizContext);
 
 function makeElement() {
   return {
@@ -51,6 +51,17 @@ test("every quiz instruction and question has a German translation", () => {
   const { context } = loadDictionary();
   const known = new Set(context.entriesForTest.map(([french]) => normalize(french)));
   const missing = quizContext.questions.filter((question) => !known.has(normalize(question)));
+  assert.equal(missing.length, 0, `Missing translations: ${missing.join(", ")}`);
+});
+
+test("every word-choice option has a German translation", () => {
+  const { context } = loadDictionary();
+  const known = new Set(context.entriesForTest.map(([french]) => normalize(french)));
+  const missing = [...new Set(quizContext.options)].filter((option) => {
+    if (/^[1-5]$/.test(option)) return false;
+    const word = normalize(option);
+    return !known.has(word) && !known.has(word.replace(/^(?:le |la |les |l')/, ""));
+  });
   assert.equal(missing.length, 0, `Missing translations: ${missing.join(", ")}`);
 });
 
