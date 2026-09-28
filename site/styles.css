@@ -191,6 +191,41 @@ main {
   padding: 1rem;
 }
 
+.course-nav {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding: 0.4rem 0 1rem;
+}
+
+.course-nav-current {
+  align-items: baseline;
+  background: var(--primary);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+
+.course-nav-current:hover,
+.course-nav-current:focus-visible {
+  background: var(--primary-strong);
+}
+
+.course-nav-current strong {
+  font-size: 1.2rem;
+}
+
+.course-nav-previous {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .intro-band {
   align-items: stretch;
   display: grid;
