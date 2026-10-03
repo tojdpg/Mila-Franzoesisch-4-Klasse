@@ -200,7 +200,8 @@ main {
   padding: 0.4rem 0 1rem;
 }
 
-.course-nav-current {
+.course-nav-current,
+.course-nav-math {
   align-items: baseline;
   background: var(--primary);
   border-radius: 8px;
@@ -213,8 +214,19 @@ main {
 }
 
 .course-nav-current:hover,
-.course-nav-current:focus-visible {
+.course-nav-current:focus-visible,
+.course-nav-math:hover,
+.course-nav-math:focus-visible {
   background: var(--primary-strong);
+}
+
+.course-nav-math {
+  background: #cf604f;
+}
+
+.course-nav-math:hover,
+.course-nav-math:focus-visible {
+  background: #a9493d;
 }
 
 .course-nav-current strong {

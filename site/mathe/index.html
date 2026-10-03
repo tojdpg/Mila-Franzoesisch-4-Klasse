@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b73">
+    <meta name="description" content="Milas Mathe-Training für Klasse 5: Zahlen, Daten und Kombinatorik.">
+    <title>Mila · Mathe-Mission 1</title>
+    <link rel="icon" href="../assets/dragon-academy.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261003-mathe1">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Mathe-Training</a>
+    <header class="topbar">
+      <div class="brand">
+        <img src="../assets/dragon-academy.svg" width="52" height="52" alt="">
+        <div>
+          <p class="eyebrow">Mila · 5. Klasse</p>
+          <p class="brand-title">Mathe-Mission 1</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="score-pill" aria-live="polite"><span>Punkte</span><strong><span id="score">0</span>/<span id="total">0</span></strong></div>
+        <div class="save-status" id="saveStatus" aria-live="polite">Wird gespeichert …</div>
+        <a class="nav-link" href="../index.html">Französisch</a>
+        <a class="nav-link" href="../uebersicht.html">Übersicht</a>
+        <button class="icon-button" id="resetBtn" type="button" aria-label="Mathe-Fortschritt zurücksetzen" title="Fortschritt zurücksetzen">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.34-5.66"/><path d="M4 4v6h6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="intro-band" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Neue Aufgabe · Zahlen, Daten &amp; Möglichkeiten</p>
+          <h1 id="intro-title">Mila und der Zahlen-Drache</h1>
+          <p>Eine Mathe-Mission mit Zahlengeraden, kniffligen Daten und überraschend vielen Möglichkeiten. Dein Stand wird auf diesem Gerät automatisch gespeichert.</p>
+        </div>
+        <aside class="mission-meter" aria-label="Lernfortschritt">
+          <div><span>Aufgaben geschafft</span><strong id="progressLabel">0 von 11</strong></div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <p id="rankLabel">Der Zahlen-Drache wartet auf deinen ersten Zug.</p>
+          <button class="coach-launcher" id="coachLauncher" type="button" aria-controls="coachPanel" aria-expanded="false"><img src="../assets/dragon-academy.svg" width="38" height="38" alt=""><span>Frag den Zahlen-Drachen</span></button>
+        </aside>
+      </section>
+
+      <nav class="mission-nav" aria-label="Mathe-Aufgaben">
+        <a href="#zahlen">Zahlen</a><a href="#runden">Runden</a><a href="#ranglisten">Ranglisten</a>
+        <a href="#haeufigkeiten">Häufigkeiten</a><a href="#daten">Daten</a><a href="#autos">Autos</a>
+        <a href="#diagramme">Umfragen</a><a href="#kreis">Kreisdiagramm</a><a href="#diagramme-lesen">Diagramme lesen</a>
+        <a href="#baum">Möglichkeiten</a><a href="#codes">Codes</a>
+      </nav>
+
+      <details class="mission" id="zahlen" open>
+        <summary><span class="mission-number">1</span><span class="mission-title"><small>Natürliche Zahlen</small><strong>Zahlen ordnen</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <p class="instruction">Lies die Pfeile ab, vergleiche die Zahlen und finde Vorgänger und Nachfolger.</p>
+          <h3>1a · Welche Zahl zeigen die Pfeile?</h3>
+          <div class="numberline-block"><div class="numberline" data-numberline data-min="0" data-max="24" data-step="2" data-label-every="1" data-points="A:6|B:14|C:20"></div>
+            <div class="answer-row"><label class="question" data-task><span>A</span><input class="answer" type="text" inputmode="numeric" data-answer="6" aria-label="Zahl bei Pfeil A"><small class="feedback"></small></label><label class="question" data-task><span>B</span><input class="answer" type="text" inputmode="numeric" data-answer="14" aria-label="Zahl bei Pfeil B"><small class="feedback"></small></label><label class="question" data-task><span>C</span><input class="answer" type="text" inputmode="numeric" data-answer="20" aria-label="Zahl bei Pfeil C"><small class="feedback"></small></label></div>
+          </div>
+          <div class="numberline-block"><div class="numberline" data-numberline data-min="60" data-max="120" data-step="10" data-label-every="1" data-points="A:70|B:100|C:110"></div>
+            <div class="answer-row"><label class="question" data-task><span>A</span><input class="answer" type="text" inputmode="numeric" data-answer="70" aria-label="Zahl bei Pfeil A"><small class="feedback"></small></label><label class="question" data-task><span>B</span><input class="answer" type="text" inputmode="numeric" data-answer="100" aria-label="Zahl bei Pfeil B"><small class="feedback"></small></label><label class="question" data-task><span>C</span><input class="answer" type="text" inputmode="numeric" data-answer="110" aria-label="Zahl bei Pfeil C"><small class="feedback"></small></label></div>
+          </div>
+          <div class="numberline-block"><div class="numberline" data-numberline data-min="0" data-max="1500" data-step="100" data-label-every="5" data-points="A:200|B:700|C:1300"></div>
+            <div class="answer-row"><label class="question" data-task><span>A</span><input class="answer" type="text" inputmode="numeric" data-answer="200" aria-label="Zahl bei Pfeil A"><small class="feedback"></small></label><label class="question" data-task><span>B</span><input class="answer" type="text" inputmode="numeric" data-answer="700" aria-label="Zahl bei Pfeil B"><small class="feedback"></small></label><label class="question" data-task><span>C</span><input class="answer" type="text" inputmode="numeric" data-answer="1300" aria-label="Zahl bei Pfeil C"><small class="feedback"></small></label></div>
+          </div>
+          <h3>1b · Setze &lt; oder &gt; ein.</h3>
+          <div class="exercise-grid two-col">
+            <div class="question" data-task data-answer="lt"><span>8 405 ___ 8 450</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="gt"><span>13 002 ___ 12 999</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="lt"><span>55 050 ___ 55 500</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="gt"><span>101 010 ___ 100 999</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="gt"><span>7 777 ___ 7 707</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="lt"><span>42 909 ___ 42 990</span><div class="choice-row"><button class="choice" type="button" data-value="lt">&lt;</button><button class="choice" type="button" data-value="gt">&gt;</button></div><small class="feedback"></small></div>
+          </div>
+          <h3>1c · Vorgänger und Nachfolger</h3>
+          <div class="neighbor-table"><div class="table-head">Vorgänger</div><div class="table-head">Zahl</div><div class="table-head">Nachfolger</div>
+            <input class="answer" data-task data-answer="7" aria-label="Vorgänger von 8"><span>8</span><input class="answer" data-task data-answer="9" aria-label="Nachfolger von 8">
+            <input class="answer" data-task data-answer="35" aria-label="Vorgänger von 36"><span>36</span><input class="answer" data-task data-answer="37" aria-label="Nachfolger von 36">
+            <input class="answer" data-task data-answer="199" aria-label="Vorgänger von 200"><span>200</span><input class="answer" data-task data-answer="201" aria-label="Nachfolger von 200">
+            <input class="answer" data-task data-answer="1099" aria-label="Vorgänger von 1 100"><span>1 100</span><input class="answer" data-task data-answer="1101" aria-label="Nachfolger von 1 100">
+          </div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="runden">
+        <summary><span class="mission-number coral">2</span><span class="mission-title"><small>Runden</small><strong>Runden mit Überblick</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <p class="rule-note"><strong>Merke:</strong> Bei 0 bis 4 bleibt die Rundungsstelle gleich. Bei 5 bis 9 wird sie um 1 erhöht. Alle Stellen rechts davon werden zu Nullen. Beispiel: 6 742 auf Hunderter gerundet ist 6 700.</p>
+          <h3>2a · Runde die Zahlen.</h3>
+          <div class="rounding-table"><div class="table-head">Auf Zehner</div><div class="table-head">Ergebnis</div><div class="table-head">Auf Hunderter</div><div class="table-head">Ergebnis</div><div class="table-head">Auf Tausender</div><div class="table-head">Ergebnis</div>
+            <span>67</span><input class="answer" data-task data-answer="70" aria-label="67 auf Zehner"><span>1 372</span><input class="answer" data-task data-answer="1400" aria-label="1372 auf Hunderter"><span>5 481</span><input class="answer" data-task data-answer="5000" aria-label="5481 auf Tausender">
+            <span>284</span><input class="answer" data-task data-answer="280" aria-label="284 auf Zehner"><span>8 649</span><input class="answer" data-task data-answer="8600" aria-label="8649 auf Hunderter"><span>42 690</span><input class="answer" data-task data-answer="43000" aria-label="42690 auf Tausender">
+            <span>2 356</span><input class="answer" data-task data-answer="2360" aria-label="2356 auf Zehner"><span>35 751</span><input class="answer" data-task data-answer="35800" aria-label="35751 auf Hunderter"><span>184 530</span><input class="answer" data-task data-answer="185000" aria-label="184530 auf Tausender">
+            <span>12 348</span><input class="answer" data-task data-answer="12350" aria-label="12348 auf Zehner"><span>204 950</span><input class="answer" data-task data-answer="205000" aria-label="204950 auf Hunderter"><span>3 456 089</span><input class="answer" data-task data-answer="3456000" aria-label="3456089 auf Tausender">
+          </div>
+          <h3>2b · Korrigiere die Ergebnisse. Schreibe jeweils das richtige gerundete Ergebnis.</h3>
+          <div class="exercise-grid two-col">
+            <label class="question" data-task><span>746 auf Hunderter: 700</span><input class="answer" inputmode="numeric" data-answer="700" aria-label="Richtig gerundetes Ergebnis für 746"><small class="feedback"></small></label>
+            <label class="question" data-task><span>1 280 auf Hunderter: 1 200</span><input class="answer" inputmode="numeric" data-answer="1300" aria-label="Richtig gerundetes Ergebnis für 1280"><small class="feedback"></small></label>
+            <label class="question" data-task><span>5 674 auf Hunderter: 5 600</span><input class="answer" inputmode="numeric" data-answer="5700" aria-label="Richtig gerundetes Ergebnis für 5674"><small class="feedback"></small></label>
+            <label class="question" data-task><span>9 842 auf Hunderter: 9 900</span><input class="answer" inputmode="numeric" data-answer="9800" aria-label="Richtig gerundetes Ergebnis für 9842"><small class="feedback"></small></label>
+            <label class="question" data-task><span>14 759 auf Hunderter: 14 760</span><input class="answer" inputmode="numeric" data-answer="14800" aria-label="Richtig gerundetes Ergebnis für 14759"><small class="feedback"></small></label>
+            <label class="question" data-task><span>129 347 auf Hunderter: 130 000</span><input class="answer" inputmode="numeric" data-answer="129300" aria-label="Richtig gerundetes Ergebnis für 129347"><small class="feedback"></small></label>
+          </div>
+          <h3>2c · Welche Zahlen werden auf Hunderter zu 3 400?</h3>
+          <div class="question" data-task data-multi-answer="3350;3362;3404;3448;3449"><div class="choice-row wrap-options"><label><input type="checkbox" data-value="3330">3 330</label><label><input type="checkbox" data-value="3350">3 350</label><label><input type="checkbox" data-value="3362">3 362</label><label><input type="checkbox" data-value="3404">3 404</label><label><input type="checkbox" data-value="3448">3 448</label><label><input type="checkbox" data-value="3449">3 449</label><label><input type="checkbox" data-value="3450">3 450</label></div><small class="feedback"></small></div>
+          <h3>2d · Runde auf ganze Euro.</h3>
+          <div class="answer-row"><label class="question" data-task><span>1,39 €</span><input class="answer" inputmode="numeric" data-answer="1" aria-label="1,39 Euro auf ganze Euro"><small class="feedback"></small></label><label class="question" data-task><span>7,79 €</span><input class="answer" inputmode="numeric" data-answer="8" aria-label="7,79 Euro auf ganze Euro"><small class="feedback"></small></label><label class="question" data-task><span>8,50 €</span><input class="answer" inputmode="numeric" data-answer="9" aria-label="8,50 Euro auf ganze Euro"><small class="feedback"></small></label></div>
+          <h3>2e · Schätze sinnvoll.</h3><p>Im Museum wurden die Tageszahlen auf Tausender gerundet: Donnerstag 7 000, Freitag 13 000, Samstag 33 000 und Sonntag 48 000 Besuche. Wie klein kann die tatsächliche Gesamtzahl sein? Wie groß höchstens? (Ab 500 wird aufgerundet.)</p>
+          <div class="answer-row"><label class="question" data-task><span>Mindestens</span><input class="answer" inputmode="numeric" data-answer="99000" aria-label="Mindestens mögliche Gesamtzahl"><small class="feedback"></small></label><label class="question" data-task><span>Höchstens</span><input class="answer" inputmode="numeric" data-answer="102996" aria-label="Höchstens mögliche Gesamtzahl"><small class="feedback"></small></label></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="ranglisten">
+        <summary><span class="mission-number">3</span><span class="mission-title"><small>Daten vergleichen</small><strong>Ranglisten &amp; Spannweiten</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>3a · Bildschirmzeit</h3><p>Zwölf Kinder notieren ihre Bildschirmzeit in Stunden: 5; 12; 7; 18; 11; 4; 16; 9; 12; 20; 6; 14.</p>
+          <label class="question wide-question" data-task><span>Erstelle die Rangliste in aufsteigender Reihenfolge.</span><input class="answer" type="text" data-list data-answer="4;5;6;7;9;11;12;12;14;16;18;20" placeholder="Zahlen mit Komma oder Leerzeichen trennen"><small class="feedback"></small></label>
+          <div class="answer-row"><label class="question" data-task><span>Minimum</span><input class="answer" inputmode="numeric" data-answer="4"><small class="feedback"></small></label><label class="question" data-task><span>Maximum</span><input class="answer" inputmode="numeric" data-answer="20"><small class="feedback"></small></label><label class="question" data-task><span>Spannweite</span><input class="answer" inputmode="numeric" data-answer="16"><small class="feedback"></small></label><label class="question" data-task><span>Anzahl</span><input class="answer" inputmode="numeric" data-answer="12"><small class="feedback"></small></label></div>
+          <h3>3b · Körpergrößen</h3><p>Gemessene Größen: 132; 145; 138; 149; 141; 155; 138; 147; 151; 143; 136; 150 cm.</p>
+          <div class="measurement-layout"><div>
+            <label class="question wide-question" data-task><span>Ordne alle Werte aufsteigend. Schreibe „cm“ nur einmal hinter die Liste.</span><input class="answer" type="text" data-list data-answer="132;136;138;138;141;143;145;147;149;150;151;155" placeholder="Zahlen mit Komma oder Leerzeichen trennen"><small class="feedback"></small></label>
+            <div class="answer-row"><label class="question" data-task><span>Minimum (cm)</span><input class="answer" inputmode="numeric" data-answer="132"><small class="feedback"></small></label><label class="question" data-task><span>Maximum (cm)</span><input class="answer" inputmode="numeric" data-answer="155"><small class="feedback"></small></label><label class="question" data-task><span>Spannweite (cm)</span><input class="answer" inputmode="numeric" data-answer="23"><small class="feedback"></small></label><label class="question" data-task><span>Anzahl Kinder</span><input class="answer" inputmode="numeric" data-answer="12"><small class="feedback"></small></label></div>
+          </div><img src="assets/messen-maedchen.webp" alt="Illustration: Ein Mädchen misst seine Körpergröße an einem Maßstab" loading="lazy"></div>
+          <p class="rule-note"><strong>Merke:</strong> Spannweite = größter Wert minus kleinster Wert. Schreibe bei Ranglisten jeden Wert mit, auch wenn er mehrfach vorkommt.</p>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="haeufigkeiten">
+        <summary><span class="mission-number coral">4</span><span class="mission-title"><small>Häufigkeitstabelle</small><strong>Wie lange ist der Schulweg?</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <p>24 Kinder brauchen so viele Minuten bis zur Schule: 5; 7; 12; 8; 10; 6; 15; 22; 18; 4; 13; 9; 11; 16; 20; 14; 25; 17; 32; 19; 6; 12; 27; 8.</p>
+          <div class="frequency-table"><div class="table-head">Zeit</div><div class="table-head">Häufigkeit</div>
+            <span>Bis 5 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="2" aria-label="Häufigkeit bis 5 Minuten">
+            <span>6–10 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="7" aria-label="Häufigkeit von 6 bis 10 Minuten">
+            <span>11–15 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="6" aria-label="Häufigkeit von 11 bis 15 Minuten">
+            <span>16–20 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="5" aria-label="Häufigkeit von 16 bis 20 Minuten">
+            <span>21–25 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="2" aria-label="Häufigkeit von 21 bis 25 Minuten">
+            <span>26–30 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="1" aria-label="Häufigkeit von 26 bis 30 Minuten">
+            <span>31–35 Minuten</span><input class="answer" data-task inputmode="numeric" data-answer="1" aria-label="Häufigkeit von 31 bis 35 Minuten">
+          </div>
+          <div class="question short-question" data-task><span>Wie viele Kinder wurden befragt?</span><input class="answer" inputmode="numeric" data-answer="24"><small class="feedback"></small></div>
+          <h3>Kreuze ja oder nein an.</h3>
+          <div class="exercise-grid two-col">
+            <div class="question" data-task data-answer="nein"><span>Niemand braucht länger als 30 Minuten.</span><div class="choice-row"><button class="choice" type="button" data-value="ja">Ja</button><button class="choice" type="button" data-value="nein">Nein</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="ja"><span>Die meisten brauchen 6 bis 10 Minuten.</span><div class="choice-row"><button class="choice" type="button" data-value="ja">Ja</button><button class="choice" type="button" data-value="nein">Nein</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="ja"><span>Vier Kinder brauchen mehr als 20 Minuten.</span><div class="choice-row"><button class="choice" type="button" data-value="ja">Ja</button><button class="choice" type="button" data-value="nein">Nein</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="nein"><span>Ein Kind braucht genau 3 Minuten.</span><div class="choice-row"><button class="choice" type="button" data-value="ja">Ja</button><button class="choice" type="button" data-value="nein">Nein</button></div><small class="feedback"></small></div>
+          </div>
+          <div class="chart-result"><h3>Streifendiagramm</h3><p>Ein Kästchen steht für ein Kind. Die Farben zeigen die Zeitgruppen.</p><div class="stacked-chart" data-stacked-chart="commute" aria-label="Streifendiagramm der Schulweg-Häufigkeiten"></div><div class="legend"><span>bis 5</span><span>6–10</span><span>11–15</span><span>16–20</span><span>21–25</span><span>26–30</span><span>31–35</span></div></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="daten">
+        <summary><span class="mission-number">5</span><span class="mission-title"><small>Säulen- &amp; Streifendiagramm</small><strong>Daten sichtbar machen</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>5a · Pias Nachrichten pro Monat</h3><p>Pia zählt ein halbes Jahr lang ihre Nachrichten: Januar 35, Februar 55, März 40, April 75, Mai 30, Juni 65.</p>
+          <div class="bar-builder" data-bar-chart data-max="80" data-chart-label="Anzahl Nachrichten"><div class="bar-plot" aria-label="Säulendiagramm zum Selbsteintragen"></div><div class="bar-inputs">
+            <label class="question" data-task><span>Jan</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Jan" data-answer="35" aria-label="Säule Januar"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Feb</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Feb" data-answer="55" aria-label="Säule Februar"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Mär</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Mär" data-answer="40" aria-label="Säule März"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Apr</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Apr" data-answer="75" aria-label="Säule April"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Mai</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Mai" data-answer="30" aria-label="Säule Mai"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Jun</span><input class="answer chart-input" type="number" min="0" max="80" step="5" data-chart-key="Jun" data-answer="65" aria-label="Säule Juni"><small class="feedback"></small></label>
+          </div></div>
+          <div class="answer-row"><div class="question" data-task data-answer="Mai"><span>Am wenigsten</span><div class="choice-row"><button class="choice" type="button" data-value="Mai">Mai</button><button class="choice" type="button" data-value="Januar">Januar</button><button class="choice" type="button" data-value="März">März</button></div><small class="feedback"></small></div><div class="question" data-task data-answer="April"><span>Am meisten</span><div class="choice-row"><button class="choice" type="button" data-value="April">April</button><button class="choice" type="button" data-value="Juni">Juni</button><button class="choice" type="button" data-value="Februar">Februar</button></div><small class="feedback"></small></div><label class="question" data-task><span>Insgesamt</span><input class="answer" inputmode="numeric" data-answer="300"><small class="feedback"></small></label></div>
+          <h3>5b · Klassensprecherwahl</h3><p>32 Kinder stimmen ab: Mina 8, Ali 10, Bea 6 und Leo 4 Stimmen. Die übrigen Stimmen stehen für andere Kandidierende.</p>
+          <label class="question short-question" data-task><span>Stimmen für Andere</span><input class="answer" inputmode="numeric" data-answer="4"><small class="feedback"></small></label>
+          <div class="question wide-question" data-task data-strip-answer="4;5;3;2;2"><span>Färbe die 16 Kästchen. Ein Kästchen steht für 2 Stimmen.</span><div class="paint-controls"><button type="button" data-paint-color="mina">Mina · 8</button><button type="button" data-paint-color="ali">Ali · 10</button><button type="button" data-paint-color="bea">Bea · 6</button><button type="button" data-paint-color="leo">Leo · 4</button><button type="button" data-paint-color="other">Andere · 4</button><button type="button" data-paint-clear>Radierer</button></div><div class="paint-strip" data-paint-strip="vote" aria-label="16 leere Felder zum Anmalen"></div><small class="feedback"></small></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="autos">
+        <summary><span class="mission-number coral">6</span><span class="mission-title"><small>Streifendiagramm</small><strong>Die bunte Autosammlung</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <img class="wide-illustration" src="assets/modellautos.webp" alt="Drei bunte Modellautos: türkis, gelb und rot" loading="lazy">
+          <p>Tobias sortiert seine Modellautos nach Farben. In der Tabelle steht, wie viele Autos es pro Farbe gibt.</p>
+          <div class="frequency-table car-table"><div class="table-head">Farbe</div><div class="table-head">Anzahl</div>
+            <span>Blau</span><b>2</b><span>Gelb</span><b>4</b><span>Orange</span><b>3</b><span>Weiß</span><b>1</b><span>Schwarz</span><b>5</b><span>Rot</span><b>3</b><span>Silber</span><b>2</b>
+          </div>
+          <div class="answer-row"><label class="question" data-task><span>Autos insgesamt</span><input class="answer" inputmode="numeric" data-answer="20"><small class="feedback"></small></label><label class="question" data-task><span>Am häufigsten</span><input class="answer" data-answer="Schwarz"><small class="feedback"></small></label><label class="question" data-task><span>Am seltensten</span><input class="answer" data-answer="Weiß"><small class="feedback"></small></label><label class="question" data-task><span>Blau und Gelb zusammen</span><input class="answer" inputmode="numeric" data-answer="6"><small class="feedback"></small></label><label class="question" data-task><span>Nicht rot</span><input class="answer" inputmode="numeric" data-answer="17"><small class="feedback"></small></label></div>
+          <div class="question wide-question" data-task data-strip-answer="2;4;3;1;5;3;2"><span>Male jedes Kästchen passend zur Farbe eines Autos an.</span><div class="paint-controls"><button type="button" data-paint-color="blue">Blau</button><button type="button" data-paint-color="yellow">Gelb</button><button type="button" data-paint-color="orange">Orange</button><button type="button" data-paint-color="white">Weiß</button><button type="button" data-paint-color="black">Schwarz</button><button type="button" data-paint-color="red">Rot</button><button type="button" data-paint-color="silver">Silber</button><button type="button" data-paint-clear>Radierer</button></div><div class="paint-strip" data-paint-strip="cars" aria-label="20 leere Felder zum Anmalen"></div><small class="feedback"></small></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="diagramme">
+        <summary><span class="mission-number">7</span><span class="mission-title"><small>Daten in Diagrammen</small><strong>Umfragen darstellen</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>7a · Lieblingstiere in vier Klassen</h3><p>Ergänze die Summen jeder Tierart und die Klassensummen.</p>
+          <div class="data-table animal-table"><div class="table-head">Tier</div><div class="table-head">5a</div><div class="table-head">5b</div><div class="table-head">5c</div><div class="table-head">5d</div><div class="table-head">Summe</div>
+            <span>Hund</span><span>5</span><span>8</span><span>6</span><span>4</span><input class="answer" data-task inputmode="numeric" data-answer="23" aria-label="Summe Hund">
+            <span>Katze</span><span>4</span><span>4</span><span>7</span><span>3</span><input class="answer" data-task inputmode="numeric" data-answer="18" aria-label="Summe Katze">
+            <span>Pferd</span><span>3</span><span>5</span><span>2</span><span>4</span><input class="answer" data-task inputmode="numeric" data-answer="14" aria-label="Summe Pferd">
+            <span>Wellensittich</span><span>2</span><span>3</span><span>5</span><span>3</span><input class="answer" data-task inputmode="numeric" data-answer="13" aria-label="Summe Wellensittich">
+            <span>Hamster</span><span>4</span><span>2</span><span>4</span><span>5</span><input class="answer" data-task inputmode="numeric" data-answer="15" aria-label="Summe Hamster">
+            <span>Anderes Tier</span><span>2</span><span>1</span><span>3</span><span>2</span><input class="answer" data-task inputmode="numeric" data-answer="8" aria-label="Summe anderes Tier">
+            <strong>Summe</strong><input class="answer" data-task inputmode="numeric" data-answer="20" aria-label="Summe Klasse 5a"><input class="answer" data-task inputmode="numeric" data-answer="23" aria-label="Summe Klasse 5b"><input class="answer" data-task inputmode="numeric" data-answer="27" aria-label="Summe Klasse 5c"><input class="answer" data-task inputmode="numeric" data-answer="21" aria-label="Summe Klasse 5d"><input class="answer" data-task inputmode="numeric" data-answer="91" aria-label="Gesamtsumme">
+          </div>
+          <div class="question short-question" data-task><span>Wie viele Kinder wurden insgesamt befragt?</span><input class="answer" inputmode="numeric" data-answer="91"><small class="feedback"></small></div>
+          <h3>Erstelle das Balkendiagramm: ein Kästchen = 1 Stimme.</h3>
+          <div class="bar-builder" data-bar-chart data-max="25" data-chart-label="Stimmen"><div class="bar-plot" aria-label="Balkendiagramm zum Selbsteintragen"></div><div class="bar-inputs animal-bars">
+            <label class="question" data-task><span>Hund</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Hund" data-answer="23" aria-label="Balken Hund"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Katze</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Katze" data-answer="18" aria-label="Balken Katze"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Pferd</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Pferd" data-answer="14" aria-label="Balken Pferd"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Vogel</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Vogel" data-answer="13" aria-label="Balken Wellensittich"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Hamster</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Hamster" data-answer="15" aria-label="Balken Hamster"><small class="feedback"></small></label>
+            <label class="question" data-task><span>Anderes</span><input class="answer chart-input" type="number" min="0" max="25" data-chart-key="Anderes" data-answer="8" aria-label="Balken anderes Tier"><small class="feedback"></small></label>
+          </div></div>
+          <h3>7b · Noten einer Klassenarbeit</h3><p>Note 1: 3 Kinder, Note 2: 5, Note 3: 9, Note 4: 4, Note 5: 2, Note 6: 1.</p>
+          <div class="bar-builder" data-bar-chart data-max="10" data-chart-label="Kinder"><div class="bar-plot" aria-label="Säulendiagramm zum Selbsteintragen"></div><div class="bar-inputs grade-bars">
+            <label class="question" data-task><span>1</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="1" data-answer="3" aria-label="Säule Note 1"><small class="feedback"></small></label><label class="question" data-task><span>2</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="2" data-answer="5" aria-label="Säule Note 2"><small class="feedback"></small></label><label class="question" data-task><span>3</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="3" data-answer="9" aria-label="Säule Note 3"><small class="feedback"></small></label><label class="question" data-task><span>4</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="4" data-answer="4" aria-label="Säule Note 4"><small class="feedback"></small></label><label class="question" data-task><span>5</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="5" data-answer="2" aria-label="Säule Note 5"><small class="feedback"></small></label><label class="question" data-task><span>6</span><input class="answer chart-input" type="number" min="0" max="10" data-chart-key="6" data-answer="1" aria-label="Säule Note 6"><small class="feedback"></small></label>
+          </div></div>
+          <div class="answer-row"><label class="question" data-task><span>Am häufigsten: Note</span><input class="answer" inputmode="numeric" data-answer="3"><small class="feedback"></small></label><label class="question" data-task><span>Insgesamt Kinder</span><input class="answer" inputmode="numeric" data-answer="24"><small class="feedback"></small></label></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="kreis">
+        <summary><span class="mission-number coral">8</span><span class="mission-title"><small>Kreisdiagramm</small><strong>Anteile im Kreis</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <p>120 Kinder besuchen ein Schulzentrum. Im Kreisdiagramm steht die Hälfte für den Ort, 30 % für das Nordviertel und 20 % für das Südviertel.</p>
+          <div class="pie-layout"><div class="pie-chart" role="img" aria-label="Kreisdiagramm: Ort 50 Prozent, Nordviertel 30 Prozent, Südviertel 20 Prozent"><span>Ort</span><span>Nordviertel</span><span>Südviertel</span></div><div class="pie-legend"><span><i class="swatch teal"></i>Ort · 50 %</span><span><i class="swatch gold"></i>Nordviertel · 30 %</span><span><i class="swatch coral"></i>Südviertel · 20 %</span></div></div>
+          <p>Schreibe die passenden Kinderzahlen auf und beantworte die Fragen.</p>
+          <div class="answer-row"><label class="question" data-task><span>Ort</span><input class="answer" inputmode="numeric" data-answer="60"><small class="feedback"></small></label><label class="question" data-task><span>Nordviertel</span><input class="answer" inputmode="numeric" data-answer="36"><small class="feedback"></small></label><label class="question" data-task><span>Südviertel</span><input class="answer" inputmode="numeric" data-answer="24"><small class="feedback"></small></label></div>
+          <div class="answer-row"><label class="question" data-task><span>Insgesamt Kinder</span><input class="answer" inputmode="numeric" data-answer="120"><small class="feedback"></small></label><label class="question" data-task><span>Die meisten kommen aus</span><input class="answer" data-answer="Ort"><small class="feedback"></small></label><label class="question" data-task><span>Nicht aus dem Ort</span><input class="answer" inputmode="numeric" data-answer="60"><small class="feedback"></small></label><label class="question" data-task><span>Unterschied Ort – Südviertel</span><input class="answer" inputmode="numeric" data-answer="36"><small class="feedback"></small></label></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="diagramme-lesen">
+        <summary><span class="mission-number">9</span><span class="mission-title"><small>Diagramme lesen</small><strong>Was zeigen die Balken?</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>9a · Geburtsgewichte</h3><p>Die Balken zeigen, wie viele Babys mit verschiedenen Gewichten geboren wurden.</p>
+          <div class="horizontal-chart" aria-label="Balkendiagramm zu Geburtsgewichten" data-weight-chart></div>
+          <div class="answer-row"><label class="question" data-task><span>Maximum (g)</span><input class="answer" inputmode="numeric" data-answer="4900"><small class="feedback"></small></label><label class="question" data-task><span>Minimum (g)</span><input class="answer" inputmode="numeric" data-answer="2500"><small class="feedback"></small></label><label class="question" data-task><span>Spannweite (g)</span><input class="answer" inputmode="numeric" data-answer="2400"><small class="feedback"></small></label><label class="question" data-task><span>Babys insgesamt</span><input class="answer" inputmode="numeric" data-answer="64"><small class="feedback"></small></label></div>
+          <h3>9b · Schuhgrößen</h3><p>Das Säulendiagramm zeigt die Anzahl der Kinder pro Schuhgröße.</p>
+          <div class="shoe-chart" role="img" aria-label="Schuhgrößen 33 bis 39 mit Häufigkeiten 1, 2, 4, 8, 10, 6 und 3"><div class="shoe-bars"><i style="--h:8%"></i><i style="--h:17%"></i><i style="--h:33%"></i><i style="--h:67%"></i><i style="--h:83%"></i><i style="--h:50%"></i><i style="--h:25%"></i></div><div class="shoe-labels"><span>33</span><span>34</span><span>35</span><span>36</span><span>37</span><span>38</span><span>39</span></div></div>
+          <div class="answer-row"><label class="question" data-task><span>Minimum</span><input class="answer" inputmode="numeric" data-answer="33"><small class="feedback"></small></label><label class="question" data-task><span>Maximum</span><input class="answer" inputmode="numeric" data-answer="39"><small class="feedback"></small></label><label class="question" data-task><span>Spannweite</span><input class="answer" inputmode="numeric" data-answer="6"><small class="feedback"></small></label><label class="question" data-task><span>Kinder insgesamt</span><input class="answer" inputmode="numeric" data-answer="34"><small class="feedback"></small></label></div>
+          <div class="exercise-grid two-col"><div class="question" data-task data-answer="7"><span>Was passiert mit der Spannweite, wenn ein zusätzliches Kind Schuhgröße 40 hat?</span><div class="choice-row"><button class="choice" type="button" data-value="7">Sie wird 7.</button><button class="choice" type="button" data-value="6">Sie bleibt 6.</button></div><small class="feedback"></small></div><div class="question" data-task data-answer="5"><span>Was passiert, wenn das einzige Kind mit Größe 33 die Klasse verlässt?</span><div class="choice-row"><button class="choice" type="button" data-value="5">Sie wird 5.</button><button class="choice" type="button" data-value="6">Sie bleibt 6.</button></div><small class="feedback"></small></div></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="baum">
+        <summary><span class="mission-number coral">10</span><span class="mission-title"><small>Baumdiagramme</small><strong>Wie viele Möglichkeiten?</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>10a · Stell dir ein Mittagessen zusammen.</h3><p>Es gibt zwei Vorspeisen (Suppe oder Salat), zwei Hauptgerichte (Pasta oder Gemüse-Lasagne) und zwei Nachspeisen (Apfel oder Birne).</p>
+          <div class="menu-layout"><img src="assets/menue.webp" alt="Illustration verschiedener Speisen für ein Menü" loading="lazy"><div class="tree-stages"><span>2 Vorspeisen</span><b>×</b><span>2 Hauptgerichte</span><b>×</b><span>2 Nachspeisen</span><b>=</b><strong>?</strong></div></div>
+          <div class="answer-row"><label class="question" data-task><span>Verschiedene Menüs</span><input class="answer" inputmode="numeric" data-answer="8"><small class="feedback"></small></label><label class="question" data-task><span>Rechenweg</span><input class="answer" data-answer="2 × 2 × 2" aria-label="Rechenweg für Menüs"><small class="feedback"></small></label></div>
+          <h3>10b · Drei Farben, drei Felder</h3><p>Du malst drei Quadrate hintereinander. Du hast Türkis, Gelb und Koralle.</p>
+          <div class="answer-row"><div class="question" data-task data-answer="27"><span>Farben dürfen sich wiederholen. Wie viele Muster gibt es?</span><input class="answer" inputmode="numeric" data-answer="27"><small class="feedback"></small></div><div class="question" data-task data-answer="6"><span>Jede Farbe darf nur einmal vorkommen. Wie viele Muster gibt es?</span><input class="answer" inputmode="numeric" data-answer="6"><small class="feedback"></small></div></div>
+          <h3>10c · Zwei Plätze im Angriff</h3><p>Fünf Spielerinnen und Spieler stehen zur Auswahl. Zwei davon werden für rechts und links ausgewählt.</p>
+          <div class="answer-row"><label class="question" data-task><span>Rechts und links sind egal</span><input class="answer" inputmode="numeric" data-answer="10"><small class="feedback"></small></label><label class="question" data-task><span>Rechts und links werden unterschieden</span><input class="answer" inputmode="numeric" data-answer="20"><small class="feedback"></small></label></div>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+
+      <details class="mission" id="codes">
+        <summary><span class="mission-number">11</span><span class="mission-title"><small>Kombinationen</small><strong>Codes und Ziffern</strong></span><span class="mission-score" data-mission-score></span></summary>
+        <div class="mission-body">
+          <h3>11a · Ein Schatz-Tresor hat vier Schlösser.</h3>
+          <div class="lock-table"><div class="table-head">Schloss 1</div><div class="table-head">Schloss 2</div><div class="table-head">Schloss 3</div><div class="table-head">Schloss 4</div><span>A, B oder C</span><span>1 bis 5</span><span>Stern oder Mond</span><span>zweistelliger Code 00–99</span></div>
+          <div class="answer-row"><label class="question" data-task><span>Codes für Schloss 4</span><input class="answer" inputmode="numeric" data-answer="100"><small class="feedback"></small></label><label class="question" data-task><span>Kombinationen für alle vier Schlösser</span><input class="answer" inputmode="numeric" data-answer="3000"><small class="feedback"></small></label></div>
+          <label class="question wide-question" data-task><span>Passender Rechenweg</span><input class="answer" data-answer="3 × 5 × 2 × 100" placeholder="Zahlen mit × verbinden"><small class="feedback"></small></label>
+          <h3>11b · Jede Ziffer darf genau einmal vorkommen. Richtig oder falsch?</h3>
+          <div class="exercise-grid two-col">
+            <div class="question" data-task data-answer="wahr"><span>Aus 1, 3, 5 und 7 lassen sich 24 vierstellige Zahlen bilden.</span><div class="choice-row"><button class="choice" type="button" data-value="wahr">Wahr</button><button class="choice" type="button" data-value="falsch">Falsch</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="18"><span>Aus 0, 2, 4 und 6 lassen sich 24 vierstellige Zahlen bilden. Wenn falsch, wie viele sind es richtig?</span><div class="choice-row"><button class="choice" type="button" data-value="24">24</button><button class="choice" type="button" data-value="18">18</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="wahr"><span>Aus 2, 5 und 8 lassen sich 6 zweistellige Zahlen bilden.</span><div class="choice-row"><button class="choice" type="button" data-value="wahr">Wahr</button><button class="choice" type="button" data-value="falsch">Falsch</button></div><small class="feedback"></small></div>
+            <div class="question" data-task data-answer="wahr"><span>Aus 3, 6 und 9 lassen sich 6 dreistellige Zahlen bilden.</span><div class="choice-row"><button class="choice" type="button" data-value="wahr">Wahr</button><button class="choice" type="button" data-value="falsch">Falsch</button></div><small class="feedback"></small></div>
+          </div>
+          <p class="rule-note"><strong>Denkanstoß:</strong> Bei vier verschiedenen Ziffern gibt es 4 Möglichkeiten für die erste Stelle, dann 3 für die zweite, 2 für die dritte und 1 für die letzte. Beginnt die Zahl mit 0, ist sie nicht vierstellig.</p>
+          <button class="check-button" type="button" data-check>Prüfen</button>
+        </div>
+      </details>
+      <footer class="page-footer"><span>Mila · Mathe-Mission 1</span><span>Gespeicherter Stand bleibt auf diesem Gerät.</span></footer>
+    </main>
+
+    <aside class="math-coach" aria-label="Zahlen-Drache">
+      <section class="coach-panel" id="coachPanel" aria-labelledby="coachTitle" hidden>
+        <div class="coach-heading"><img src="../assets/dragon-academy.svg" width="42" height="42" alt=""><div><p class="eyebrow">Dein Mathe-Coach</p><h2 id="coachTitle">Zahlen-Drache</h2></div><button class="coach-close" id="coachClose" type="button" aria-label="Chat schließen">×</button></div>
+        <div class="coach-messages" id="coachMessages" aria-live="polite"><p class="coach-bubble bot">Hallo Mila! Was ist knifflig? Ich gebe dir einen Tipp, damit du selbst weiterkommst.</p></div>
+        <div class="coach-prompts"><button type="button">Wie runde ich?</button><button type="button">Was ist die Spannweite?</button><button type="button">Wie lese ich ein Diagramm?</button></div>
+        <form id="coachForm"><label class="sr-only" for="coachInput">Frage an den Zahlen-Drachen</label><textarea id="coachInput" rows="2" maxlength="240" placeholder="Frag mich zu einer Mathe-Regel …"></textarea><button class="coach-send" type="submit" aria-label="Frage senden">Senden</button></form>
+        <p class="coach-note">Mathe-Tipps zu dieser Mission · Deine Frage wird nicht übertragen.</p>
+      </section>
+    </aside>
+    <script src="app.js?v=20261003-mathe1"></script>
+  </body>
+</html>
