@@ -201,7 +201,8 @@ main {
 }
 
 .course-nav-current,
-.course-nav-math {
+.course-nav-math,
+.course-nav-animals {
   align-items: baseline;
   background: var(--primary);
   border-radius: 8px;
@@ -216,7 +217,9 @@ main {
 .course-nav-current:hover,
 .course-nav-current:focus-visible,
 .course-nav-math:hover,
-.course-nav-math:focus-visible {
+.course-nav-math:focus-visible,
+.course-nav-animals:hover,
+.course-nav-animals:focus-visible {
   background: var(--primary-strong);
 }
 
@@ -227,6 +230,15 @@ main {
 .course-nav-math:hover,
 .course-nav-math:focus-visible {
   background: #a9493d;
+}
+
+.course-nav-animals {
+  background: #18794e;
+}
+
+.course-nav-animals:hover,
+.course-nav-animals:focus-visible {
+  background: #12633f;
 }
 
 .course-nav-current strong {

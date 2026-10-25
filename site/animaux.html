@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b87">
+    <meta name="description" content="NaWi-Test für Mila: französische Wörter rund um die Tierklassifizierung.">
+    <title>NaWi: La grande enquête des animaux - Mila</title>
+    <link rel="icon" href="assets/dragon-academy.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261025-animaux1">
+    <link rel="stylesheet" href="animal-vocabulaire.css?v=20261025-animaux2">
+  </head>
+  <body class="animal-vocab-page">
+    <a class="skip-link" href="#questions">Aller au test</a>
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/dragon-academy.svg" width="56" height="56" alt="">
+        <div>
+          <p class="eyebrow">Mila · 5. Klasse · NaWi</p>
+          <p class="brand-title">La grande enquête des animaux</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="score-pill" aria-live="polite">
+          <span>Score</span>
+          <strong><span id="score">0</span>/<span id="total">13</span></strong>
+        </div>
+        <div class="save-status" id="saveStatus" aria-live="polite">Automatisch gespeichert</div>
+        <a class="nav-link" href="uebersicht.html">Übersicht</a>
+        <a class="nav-link" href="index.html">Français</a>
+        <button class="icon-button" id="resetBtn" type="button" aria-label="Neuen Durchgang starten" title="Neuen Durchgang starten">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.34-5.66"/><path d="M4 4v6h6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="animal-hero" aria-labelledby="animal-title">
+        <div>
+          <p class="eyebrow">Test de NaWi</p>
+          <h1 id="animal-title">La grande enquête des animaux</h1>
+          <p>Observe chaque image-indice et retrouve le mot français. Écris aussi les formes au singulier et au pluriel.</p>
+          <p class="animal-hero-note">Lies den deutschen Hinweis, schau dir das Bild an und schreibe das französische Wort.</p>
+        </div>
+        <img class="animal-hero-image" src="assets/animaux/classification.webp" alt="Ein Vogel, eine Katze und ein Fisch als Beispiele für verschiedene Tiergruppen">
+      </section>
+
+      <section class="animal-progress" aria-label="Fortschritt">
+        <div class="animal-progress-copy"><span id="answeredLabel">0 von 13 Antworten</span><strong id="progressLabel">0 %</strong></div>
+        <div class="progress-track" role="progressbar" aria-label="Beantwortete Wörter" aria-valuemin="0" aria-valuemax="13" aria-valuenow="0">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </section>
+
+      <section id="questions" aria-label="Vokabeltest">
+        <div class="animal-questions" id="questionList"></div>
+        <div class="animal-submit-row">
+          <p id="testMessage" aria-live="polite">Deine Antworten werden automatisch gespeichert.</p>
+          <button class="check-button" id="checkBtn" type="button">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+            Vérifier mes réponses
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="school-sync.js?v=20261005-devicebackup1" data-profile="mila" data-apps="animal-vocabulaire.js?v=20261025-animaux2"></script>
+  </body>
+</html>
